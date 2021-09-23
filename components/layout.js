@@ -9,19 +9,16 @@ export const siteTitle = 'Cafe Ryan - Food and Drinks'
 
 export default function Layout({ children, home }) {
 	return (
-		<div className={styles.container}>
+		<div className=''>
 			<Head>
 				<link rel='icon' href='/images/favicon.ico' />
-				<meta
-					name='description'
-					content='Learn how to build a personal website using Next.js'
-				/>
-				<meta property='og:image' content='./favicon.ico' />
+				<meta name='description' content={siteTitle} />
 				<meta name='og:title' content={siteTitle} />
+				<meta property='og:image' content='/images/favicon.ico' />
 				<meta name='twitter:card' content='summary_large_image' />
 			</Head>
 			<header>
-				<div className=''>test</div>
+				<div className='bg-yellow-400'>test</div>
 			</header>
 			<header className={styles.header}>
 				{home ? (
