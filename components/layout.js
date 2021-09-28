@@ -9,7 +9,7 @@ export const siteTitle = 'Cafe Ryan - Food and Drinks'
 
 export default function Layout({ children, home }) {
 	return (
-		<div className=''>
+		<div className='flex flex-col h-screen min-h-screen'>
 			<Head>
 				<link rel='icon' href='/images/favicon.ico' />
 				<meta name='description' content={siteTitle} />
@@ -17,52 +17,15 @@ export default function Layout({ children, home }) {
 				<meta property='og:image' content='/images/favicon.ico' />
 				<meta name='twitter:card' content='summary_large_image' />
 			</Head>
-			<header>
-				<div className='bg-yellow-400'>test</div>
+			<header className='h-14'>
+				<div>test</div>
 			</header>
-			<header className={styles.header}>
-				{home ? (
-					<>
-						<Image
-							priority
-							src='/images/coffee.jpeg'
-							className={utilStyles.borderCircle}
-							height={144}
-							width={144}
-							alt={name}
-						/>
-						<h1 className={utilStyles.heading2Xl}>{name}</h1>
-					</>
-				) : (
-					<>
-						<Link href='/'>
-							<a>
-								<Image
-									priority
-									src='/images/coffee.jpeg'
-									className={utilStyles.borderCircle}
-									height={108}
-									width={108}
-									alt={name}
-								/>
-							</a>
-						</Link>
-						<h2 className={utilStyles.headingLg}>
-							<Link href='/'>
-								<a className={utilStyles.colorInherit}>{name}</a>
-							</Link>
-						</h2>
-					</>
-				)}
-			</header>
-			<main>{children}</main>
-			{!home && (
-				<div className={styles.backToHome}>
-					<Link href='/'>
-						<a>← Back to home</a>
-					</Link>
-				</div>
-			)}
+			<div className='flex flex-1 flex-col overflow-y-auto'>
+				<main className='flex-1 bg-gray-100'>{children}</main>
+				<footer className='h-14'>
+					<div>test</div>
+				</footer>
+			</div>
 		</div>
 	)
 }
