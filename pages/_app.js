@@ -1,3 +1,4 @@
+import 'antd/dist/antd.css'
 import 'styles/_globals.scss'
 import 'tailwindcss/tailwind.css'
 
