@@ -1,24 +1,16 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from 'components/layout'
+import styles from 'styles/index.module.scss'
 
-export default function Home() {
+const Home = () => {
 	return (
 		<Layout>
 			<Head>
 				<title>{siteTitle}</title>
 			</Head>
-			<section>
-				<p>This is a sample website</p>
-				<p>This is a sample website</p>
-				<p>This is a sample website</p>
-				<p>This is a sample website</p>
-				<p>This is a sample website</p>
-				<p>This is a sample website</p>
-				<p>This is a sample website</p>
-				<p>This is a sample website</p>
-				<p>This is a sample website</p>
-				<p>This is a sample website</p>
-			</section>
+			<section className={`${styles.hero_section} w-full h-40`}></section>
 		</Layout>
 	)
 }
+
+export default Home
