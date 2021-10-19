@@ -1,4 +1,4 @@
-import 'antd/dist/antd.css'
+import 'antd/dist/antd.less'
 import 'tailwindcss/tailwind.css'
 import 'styles/_globals.scss'
 import 'styles/_antd-overrides.scss'

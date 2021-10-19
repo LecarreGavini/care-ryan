@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu } from 'antd'
+import { Menu, Button } from 'antd'
 import {
 	HomeOutlined,
 	ProfileOutlined,
@@ -32,7 +32,9 @@ const Header = () => {
 	return (
 		<header className={`${styles.header_section} w-full h-screen`}>
 			<div className='flex justify-between'>
-				<div className='ml-5 my-auto'>Logo</div>
+				<div className='ml-5 my-auto'>
+					<Button type='primary'>Logo</Button>
+				</div>
 				<div className='mr-5 my-auto w-72'>
 					<Menu
 						onClick={handleMenuClick}
