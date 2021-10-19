@@ -1,0 +1,16 @@
+.header_section {
+	background-color: #fff;
+	background-image: url('../public/images/hero-banner.png');
+	background-repeat: no-repeat;
+	background-size: 100vmax;
+
+	ul {
+		li {
+			color: #fff !important;
+
+			&:after {
+				border-bottom: 2px solid #fff;
+			}
+		}
+	}
+}
